@@ -135,7 +135,7 @@ If you also use the classical baselines, please additionally cite the original w
 
 ## Acknowledgements
 
-This research was conducted at the [Interdisciplinary Computational Vision Laboratory (ICVL)](https://icvl.cs.bgu.ac.il/) at Ben-Gurion University of the Negev, led by Prof. Ohad Ben-Shahar. We thank The Metropolitan Museum of Art for releasing their collection under CC0, and the authors of the RePAIR dataset for making real archaeological fragment data publicly available.
+This work has been funded in part by the European Union’s Horizon 2020 research and innovation programme under grant agreement No 964854 (the RePAIR project), and was conducted at the Interdisciplinary Computational Vision Laboratory (ICVL) at Ben-Gurion University of the Negev, led by Prof. Ohad Ben-Shahar. We thank The Metropolitan Museum of Art for releasing their collection under CC0, and the RePAIR collaboration for providing real archaeological fragment data from Pompeii (Tsesmelis et al., NeurIPS 2024). We also acknowledge GitHub Copilot and Anthropic Claude for their assistance with code refactoring, technical suggestions, and linguistic refinement of this repository.
 
 ## License
 

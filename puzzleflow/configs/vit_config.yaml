@@ -1,0 +1,54 @@
+# ViT-based Puzzle Flow Matching Configuration
+
+# ViT Configuration
+vit_model_name: 'google/vit-base-patch16-224'  # HuggingFace model
+freeze_vit: false  # Set to true for feature extraction only
+freeze_layers: 0  # Number of ViT layers to freeze (0-12 for base)
+
+# Model Configuration
+piece_size: [96, 96]
+grid_size: 3  # Will be auto-detected from dataset
+d_model: 768  # ViT-base output dimension
+n_heads: 12  # Match ViT-base
+n_layers: 4  # Additional transformer layers after ViT (reduced for fair comparison with V2)
+dim_feedforward: 3072  # 4x d_model
+dropout: 0.1
+
+# Flow Matching
+interpolation_type: linear
+
+# Validation
+val_n_steps: 5  # Number of flow steps for validation (5=fast, 20=accurate). Use 5 during training for 4× speedup.
+
+# Training
+batch_size: 8  # Reduced for OOM safety (was 16). Use --val-batch-size 2 for extra safety
+num_epochs: 30  # Updated for final experiments
+learning_rate: 0.00001  # Lower LR for fine-tuning (1e-5)
+weight_decay: 0.01
+betas: [0.9, 0.999]
+warmup_pct: 0.1
+
+use_amp: true
+
+# Data
+num_workers: 8  # Default for Windows. Use --num-workers 8 on Linux for better performance
+pin_memory: true
+persistent_workers: true  # Keep workers alive between epochs (auto-enabled if num_workers > 0)
+prefetch_factor: 2  # Prefetch 2 batches per worker (auto-enabled if num_workers > 0)
+
+# Checkpointing
+checkpoint_dir: ./checkpoints_vit
+save_frequency: 1
+
+# Logging
+project_name: puzzle-flow-matching-vit
+run_name: null
+log_frequency: 10
+wandb_api_key: null  # Set to your W&B API key to enable logging, or set WANDB_API_KEY env var
+
+# Notes:
+# - For feature extraction only: set freeze_vit=true and learning_rate=0.001
+# - For fine-tuning: set freeze_vit=false and learning_rate=0.00001
+# - For progressive unfreezing: start with freeze_layers=12, gradually reduce
+# - Batch size is smaller due to ViT memory requirements
+# - ViT converges faster, so fewer epochs needed

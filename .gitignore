@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+.Python
+build/
+dist/
+.eggs/
+
+# Virtual envs
+venv/
+env/
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Experiment outputs
+checkpoints/
+logs/
+wandb/
+outputs/
+predictions/
+results/
+*.pth
+*.ckpt
+*.npz
+*.npy
+
+# Datasets (do NOT commit GAP HDF5 files)
+data/
+*.h5
+*.hdf5

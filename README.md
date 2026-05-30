@@ -18,7 +18,7 @@ This repository contains the official code release for the CVPR 2026 paper
 It bundles:
 
 1. **PuzzleFlow** — a Vision Transformer + discrete Flow-Matching framework for jigsaw puzzles with irregular, eroded fragments.
-2. **GAP** (Generated Archaeological-fragments Puzzles) — large-scale benchmark datasets (GAP-3, GAP-5) with 20,000 puzzles each, generated from a VAE trained on real archaeological fragments.
+2. **GAP** (Generated Archaeological-fragments Puzzles) — large-scale benchmark datasets (GAP-3, GAP-5) with 20,000 puzzles each, generated from a VAE trained on real archaeological fragments, followed by several post-processing morphological operations.
 3. **Reimplemented classical baselines** — the greedy solver of Pomeranz *et al.* (CVPR 2011) and the genetic-algorithm solver of Sholomon *et al.* (CVPR 2013), adapted to the GAP format.
 
 ## Abstract

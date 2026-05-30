@@ -77,7 +77,7 @@ Full framework code, training, and inference scripts are in [`puzzleflow/`](puzz
 
 ```bash
 # 1. Clone
-git clone https://github.com/<your-org>/puzzle-flow-matching.git
+git clone https://github.com/OfirShahar/puzzle-flow-matching.git
 cd puzzle-flow-matching
 
 # 2. Install PuzzleFlow dependencies

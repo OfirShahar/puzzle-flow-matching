@@ -139,4 +139,6 @@ This work has been funded in part by the European Union’s Horizon 2020 researc
 
 ## License
 
-Code in this repository is released under the [MIT License](LICENSE). The GAP dataset is released for academic research purposes — see the dataset card on Hugging Face for details.
+Code in this repository is released under the [MIT License](LICENSE). The GAP dataset is released for academic research purposes under the terms described in its Hugging Face dataset card. Use of GAP-derived data must comply with both The Metropolitan Museum of Art Open Access policy (CC0 images) and the RePAIR dataset licence terms. The RePAIR dataset itself is distributed separately by the RePAIR consortium and is subject to its own non-commercial, research-only license.
+
+

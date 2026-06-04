@@ -108,15 +108,14 @@ python puzzleflow/scripts/evaluate.py \
 If you use PuzzleFlow, the GAP datasets, or the baseline reimplementations in your research, please cite:
 
 ```bibtex
-@article{shahar2026missing,
+@inproceedings{shahar2026missing,
   title={The Missing GAP: From Solving Square Jigsaw Puzzles to Handling Real World Archaeological Fragments},
   author={Shahar, Ofir Itzhak and Elkin, Gur and Ben-Shahar, Ohad},
-  journal={arXiv preprint arXiv:2605.12077},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={3186--3196},
   year={2026}
 }
 ```
-
-> The citation above will be replaced with the official CVPR 2026 reference once available.
 
 If you also use the classical baselines, please additionally cite the original works:
 
